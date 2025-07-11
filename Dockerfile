@@ -1,5 +1,5 @@
 FROM registry.cn-shanghai.aliyuncs.com/mooneep/node:14 as builder
-RUN npm install -g cnpm --registry=https://registry.npm.taobao.org && \
+RUN npm install -g cnpm --registry=http://registry.npmmirror.com && \
     cnpm i -g hexo-cli
 ADD ./ /home
 WORKDIR /home
