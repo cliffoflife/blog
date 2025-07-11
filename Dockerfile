@@ -1,4 +1,4 @@
-FROM node:latest as builder
+FROM node:10 as builder
 RUN npm install -g cnpm --registry=https://registry.npm.taobao.org && \
     cnpm i -g hexo-cli
 ADD ./ /home
